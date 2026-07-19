@@ -2,11 +2,11 @@ packages:
   - '**'
   - '!dist'
   - '!**/dist/**'
-allowBuilds:
-  '@parcel/watcher': false
-  '@prisma/engines': true
-  '@swc/core': false
-  esbuild: false
-  msw: false
-  prisma: true
-  sharp: false
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@prisma/engines'
+  - '@swc/core'
+  - esbuild
+  - msw
+  - prisma
+  - sharp
